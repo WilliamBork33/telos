@@ -14,7 +14,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 section {
@@ -31,6 +31,12 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+.jumbotron {
+  background-image: image-url('pokeballs.jpg');
+  height: 400px;
+}
+
 
 /* typography */
 
@@ -115,6 +121,10 @@ footer {
 
 /* sidebar */
 
+.col-md-4 {
+  height: 300px;
+}
+
 aside {
   section.user_info {
     margin-top: 20px;
@@ -192,9 +202,13 @@ input {
 
 /* microposts */
 
+.col-md-8{
+  background-color: $gray-lighter;
+}
+
 .microposts {
   list-style: none;
-  padding: 0;
+  padding: 0;  
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -224,6 +238,7 @@ input {
 }
 
 aside {
+  background-image: image-url('pokeballs.jpg');
   textarea {
     height: 100px;
     margin-bottom: 5px;
@@ -236,3 +251,4 @@ span.picture {
     border: 0;
   }
 }
+ 
