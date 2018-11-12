@@ -14,7 +14,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 section {
@@ -121,6 +121,10 @@ footer {
 
 /* sidebar */
 
+.col-md-4 {
+  height: 300px;
+}
+
 aside {
   section.user_info {
     margin-top: 20px;
@@ -200,7 +204,6 @@ input {
 
 .col-md-8{
   background-color: $gray-lighter;
-  
 }
 
 .microposts {
