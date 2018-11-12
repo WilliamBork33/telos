@@ -7,10 +7,16 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 # bcrypt
 gem 'bcrypt',         '3.1.12'
+# Create fake users for testing
+gem 'faker',          '1.9.1'
 # bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# To paginate users index list
+gem 'will_paginate',           '3.1.6'
+# To paginate users index list
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
