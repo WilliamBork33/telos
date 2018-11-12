@@ -21,8 +21,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      flash[:success] = "Welcome to your Pokédex Profile! Log your first catch here on 'Home' page, view other users in 'Users', or adjust your setting in 'Account'."
+      redirect_to "/"
     else
       render 'new'
     end
