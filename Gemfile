@@ -13,6 +13,10 @@ gem 'faker',          '1.9.1'
 gem 'bootstrap-sass', '~> 3.3.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# For image uploading with posts
+gem 'carrierwave',             '1.2.2'
+# For image uploading with posts
+gem 'mini_magick',             '4.7.0'
 # To paginate users index list
 gem 'will_paginate',           '3.1.6'
 # To paginate users index list
@@ -66,6 +70,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+end
+
+group :production do
+  gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

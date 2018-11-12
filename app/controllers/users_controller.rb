@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
     #debugger
   end
   
@@ -55,7 +56,7 @@ class UsersController < ApplicationController
 
     # Before filters
 
-    # Confirms a logged-in user.
+    # Confirms a logged-in user. Should remove to avoid duplication in application_controller.rb
     def logged_in_user
       unless logged_in?
         store_location
