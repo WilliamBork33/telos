@@ -7,12 +7,10 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
         <%= @user.email %>
-        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
         Account Created: <%= @user.created_at.strftime("%b. %d %Y") %>
         <br><br>
         Last Updated: <%= @user.updated_at.strftime("%b. %d %Y") %>
-        <br><br>
-        Current Time: <%= Time.now.strftime("%b. %d %Y") %>
       </h1>
     </section>
   </aside>
